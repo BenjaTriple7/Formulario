@@ -53,6 +53,9 @@ const toastLiveExample = document.getElementById('liveToast');
 
 if (toastTrigger && toastLiveExample) {
     const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+    // Esta línea obtiene o crea una instancia de Toast de Bootstrap asociada al elemento 'toastLiveExample'.
+  // Si ya existe una instancia para ese elemento, la reutiliza; si no, crea una nueva.
+  // Esto permite mostrar notificaciones tipo "toast" usando las funcionalidades de Bootstrap.
 
     toastTrigger.addEventListener('click', () => {
         let edad = document.getElementById("edad").value;
