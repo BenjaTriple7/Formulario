@@ -17,7 +17,7 @@ const alertButton = document.getElementById('liveAlertBtn')
 if (alertButton) {
   alertButton.addEventListener('click', () => {
     let nombre = document.getElementById('nombre').value;
-    appendAlert('Tu nombre bien hijueputa es ' + nombre, 'success')
+    appendAlert('Tu nombre es ' + nombre, 'success')
   })
 }
 
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   popoverBtn.addEventListener("click", function () {
     let apellido = document.getElementById("apellido").value;
-    popoverBtn.setAttribute("data-bs-content", `Tu apellido bien bellako es ${apellido}`);
+    popoverBtn.setAttribute("data-bs-content", `Tu apellido es ${apellido}`);
 
     if (!popoverInstance) {
       popoverInstance = new bootstrap.Popover(popoverBtn);
@@ -62,7 +62,7 @@ if (toastTrigger && toastLiveExample) {
         // Busca el elemento con la clase 'toast-body' dentro del toast
         let toastBody = toastLiveExample.querySelector('.toast-body');
         if (toastBody) {
-            toastBody.textContent = `Tu edad bien bellaka es ${edad} años`;
+            toastBody.textContent = `Tu edad es ${edad} años`;
         }
         toastBootstrap.show();
     });
@@ -84,7 +84,7 @@ if (offcanvasTrigger && offcanvasElement) {
         // Busca el elemento con la clase 'offcanvas-body' dentro del offcanvas
         let offcanvasBody = offcanvasElement.querySelector('.offcanvas-body');
         if (offcanvasBody) {
-            offcanvasBody.textContent = `Tu ciudad bien cabrona es ${ciudad}`;
+            offcanvasBody.textContent = `Tu ciudad es ${ciudad}`;
         }
         offcanvasInstance.show();
     });
